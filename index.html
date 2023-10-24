@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
       <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="">
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
@@ -83,7 +83,7 @@
       </div>
 
       <!--==================== LOGIN ====================-->
-      <div class="login grid" id="login-content">
+      <div class="login grid" id="loginContent">
          <form action="" class="loginForm grid">
             <h3 class="loginTitle">
                Log in
@@ -119,27 +119,604 @@
       <main class="main">
          <!--==================== HOME ====================-->
          <section class="home section" id="home">
-            
+            <div class="homeContainer container grid">
+               <div class="homeData">
+                  <h1 class="homeTitle">
+                     Browse & <br>
+Select E-Books
+                  </h1>
+
+                  <p class="homeDescription">
+                     Find the best e-books from your favorite writers, explore hundreds of books with all possible categories, take advantage of the 50% discount and much more. 
+                  </p>
+                  
+                  <a href="#" class="button">Explore Now</a>
+               </div>
+
+               <div class="homeImages">
+                  <div class="homeSwiper swiper"> 
+                     <div class="swiper-wrapper">
+                        <article class="swiper-slide homeArticle ">
+                           <img src="assets/img/home-book-1.png" alt="book" class="homeImage">
+                        </article>
+                        <article class="swiper-slide homeArticle ">
+                           <img src="assets/img/home-book-2.png" alt="book" class="homeImage">
+                        </article>
+                        <article class="swiper-slide homeArticle ">
+                           <img src="assets/img/home-book-3.png" alt="book" class="homeImage">
+                        </article>
+                        <article class="swiper-slide homeArticle ">
+                           <img src="assets/img/home-book-4.png" alt="book" class="homeImage">
+                        </article>
+                     </div>
+                  </div>
+               </  div> 
+            </div>
          </section>
 
          <!--==================== SERVICES ====================-->
          <section class="services section">
-            
+            <div class="servicesContainer container grid">
+               <article class="servicesCard">
+                  <i class="ri-truck-line"></i>
+                  <h3 class="servicesTitle">Free Shipping</h3>
+                  <p class="servicesDescription">Order More Than $100</p>
+               </article>
+               <article class="servicesCard">
+                  <i class="ri-lock-2-line"></i>
+                  <h3 class="servicesTitle">Secure Payment</h3>
+                  <p class="servicesDescription">100% Secure Payment</p>
+               </article>
+               <article class="servicesCard">
+                  <i class="ri-customer-service-2-line"></i>
+                  <h3 class="servicesTitle">24/7 Support</h3>
+                  <p class="servicesDescription">Call us anytime</p>
+               </article>
+
+            </div>
          </section>
 
          <!--==================== FEATURED ====================-->
          <section class="featured section" id="featured">
-            
+            <h2 class="sectionTitle">Featured Books</h2>
+
+            <div class="featuredContainer container">
+               <div class="featuredSwiper swiper">
+                  <div class="swiper-wrapper">
+                     <article class="featuredCard swiper-slide">
+                        <img src="assets/img/book-1.png" alt="featured book" class="featuredImg">
+                        <h2 class="featuredTitle">The Lord of the Rings</h2>
+                        <div class="featuredPrices">
+                           <span class="featuredDiscount"> ₦11,000.99</span>
+                           <span class="featuredPrice"> ₦13,000.99</span>
+                        </div>
+
+                        <button type="button">Add to Cart</button>
+
+                        <div class="featuredActions">
+                           <button type="button" aria-label="Search"><i class="ri-search-line"></i></button>
+                           <button type="button" aria-label="Add to wishlist"><i class="ri-heart-3-line"></i></button>
+                           <button type="button" aria-label="Hide"><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     <article class="featuredCard swiper-slide">
+                        <img src="assets/img/book-2.png" alt="featured book" class="featuredImg">
+                        <h2 class="featuredTitle">Simple and Minimalist</h2>
+                        <div class="featuredPrices">
+                           <span class="featuredDiscount"> ₦11,000.99</span>
+                           <span class="featuredPrice"> ₦13,000.99</span>
+                        </div>
+
+                        <button type="button">Add to Cart</button>
+
+                        <div class="featuredActions">
+                           <button type="button" aria-label="Search"><i class="ri-search-line"></i></button>
+                           <button type="button" aria-label="Add to wishlist"><i class="ri-heart-3-line"></i></button>
+                           <button type="button" aria-label="Hide"><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     <article class="featuredCard swiper-slide">
+                        <img src="assets/img/book-3.png" alt="featured book" class="featuredImg">
+                        <h2 class="featuredTitle">Muted Color Poster</h2>
+                        <div class="featuredPrices">
+                           <span class="featuredDiscount"> ₦11,000.99</span>
+                           <span class="featuredPrice"> ₦13,000.99</span>
+                        </div>
+
+                        <button type="button">Add to Cart</button>
+
+                        <div class="featuredActions">
+                           <button type="button" aria-label="Search"><i class="ri-search-line"></i></button>
+                           <button type="button" aria-label="Add to wishlist"><i class="ri-heart-3-line"></i></button>
+                           <button type="button" aria-label="Hide"><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     <article class="featuredCard swiper-slide">
+                        <img src="assets/img/book-4.png" alt="featured book" class="featuredImg">
+                        <h2 class="featuredTitle">Pouring Dreams</h2>
+                        <div class="featuredPrices">
+                           <span class="featuredDiscount"> ₦11,000.99</span>
+                           <span class="featuredPrice"> ₦13,000.99</span>
+                        </div>
+
+                        <button type="button">Add to Cart</button>
+
+                        <div class="featuredActions">
+                           <button type="button" aria-label="Search"><i class="ri-search-line"></i></button>
+                           <button type="button" aria-label="Add to wishlist"><i class="ri-heart-3-line"></i></button>
+                           <button type="button" aria-label="Hide"><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     <article class="featuredCard swiper-slide">
+                        <img src="assets/img/book-5.png" alt="featured book" class="featuredImg">
+                        <h2 class="featuredTitle">Customize Your Autumn Clothes</h2>
+                        <div class="featuredPrices">
+                           <span class="featuredDiscount"> ₦11,000.99</span>
+                           <span class="featuredPrice"> ₦13,000.99</span>
+                        </div>
+
+                        <button type="button">Add to Cart</button>
+
+                        <div class="featuredActions">
+                           <button type="button" aria-label="Search"><i class="ri-search-line"></i></button>
+                           <button type="button" aria-label="Add to wishlist"><i class="ri-heart-3-line"></i></button>
+                           <button type="button" aria-label="Hide"><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     <article class="featuredCard swiper-slide">
+                        <img src="assets/img/book-6.png" alt="featured book" class="featuredImg">
+                        <h2 class="featuredTitle">Designed for Work</h2>
+                        <div class="featuredPrices">
+                           <span class="featuredDiscount"> ₦11,000.99</span>
+                           <span class="featuredPrice"> ₦13,000.99</span>
+                        </div>
+
+                        <button type="button">Add to Cart</button>
+
+                        <div class="featuredActions">
+                           <button type="button" aria-label="Search"><i class="ri-search-line"></i></button>
+                           <button type="button" aria-label="Add to wishlist"><i class="ri-heart-3-line"></i></button>
+                           <button type="button" aria-label="Hide"><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     <article class="featuredCard swiper-slide">
+                        <img src="assets/img/book-7.png" alt="featured book" class="featuredImg">
+                        <h2 class="featuredTitle">Plant Tree for the Future</h2>
+                        <div class="featuredPrices">
+                           <span class="featuredDiscount"> ₦11,000.99</span>
+                           <span class="featuredPrice"> ₦13,000.99</span>
+                        </div>
+
+                        <button type="button">Add to Cart</button>
+
+                        <div class="featuredActions">
+                           <button type="button" aria-label="Search"><i class="ri-search-line"></i></button>
+                           <button type="button" aria-label="Add to wishlist"><i class="ri-heart-3-line"></i></button>
+                           <button type="button" aria-label="Hide"><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     <article class="featuredCard swiper-slide">
+                        <img src="assets/img/book-8.png" alt="featured book" class="featuredImg">
+                        <h2 class="featuredTitle">Modern Abstract Poster</h2>
+                        <div class="featuredPrices">
+                           <span class="featuredDiscount"> ₦11,000.99</span>
+                           <span class="featuredPrice"> ₦13,000.99</span>
+                        </div>
+
+                        <button type="button">Add to Cart</button>
+
+                        <div class="featuredActions">
+                           <button type="button" aria-label="Search"><i class="ri-search-line"></i></button>
+                           <button type="button" aria-label="Add to wishlist"><i class="ri-heart-3-line"></i></button>
+                           <button type="button" aria-label="Hide"><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     <article class="featuredCard swiper-slide">
+                        <img src="assets/img/book-9.png" alt="featured book" class="featuredImg">
+                        <h2 class="featuredTitle">Bird Park</h2>
+                        <div class="featuredPrices">
+                           <span class="featuredDiscount"> ₦11,000.99</span>
+                           <span class="featuredPrice"> ₦13,000.99</span>
+                        </div>
+
+                        <button type="button">Add to Cart</button>
+
+                        <div class="featuredActions">
+                           <button type="button" aria-label="Search"><i class="ri-search-line"></i></button>
+                           <button type="button" aria-label="Add to wishlist"><i class="ri-heart-3-line"></i></button>
+                           <button type="button" aria-label="Hide"><i class="ri-eye-line"></i></button>
+                        </div> 
+                     </article>
+                  </div>
+                  <div class="swiper-button-prev">
+                     <i class="ri-arrow-left-s-line"></i>
+                  </div>
+                  <div class="swiper-button-next"> 
+                     <i class="ri-arrow-right-s-line"></i>
+                  </div>
+               </div>
+            </div>
          </section>
 
          <!--==================== DISCOUNT ====================-->
          <section class="discount section" id="discount">
-            
+            <div class="discountContainer container grid">
+               <div class="discountData">
+                  <h2 class="discountTitle sectionTitle">
+                     Up To 50% Discount
+                  </h2>
+
+                  <p class="discountDescription">
+                     Take advantage of the discount days we have for you, buy books from your favorite writers, the more you buy, the more discounts we have for you.
+                  </p>
+ 
+                  <a href="#" class="button">Shop Now</a>
+               </div>
+               <div class="discountImages">
+                  <img src="assets/img/discount-book-1.png" alt="image" class="discountImg1">
+                  <img src="assets/img/discount-book-2.png" alt="image" class="discountImg2">
+               </div>
+            </div>
          </section>
 
          <!--==================== NEW BOOKS ====================-->
          <section class="new section" id="new">
-            
+            <h2 class="sectionTitle">
+                     New Books
+                  </h2>
+
+                  <div class="newContainer container">
+                     <div class="newSwiper swiper">
+                        <div class="swiper-wrapper">
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-2.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Simple & Minimalist</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i>  
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-3.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Muted Color Poster</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-4.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Pouring Dreams</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-5.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Customize your Autumn Clothes</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-6.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Designed for Work</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-7.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Plant Tree for the Future</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-8.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Modern Abstract Poster</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-9.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Bird Park</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-10.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Memories of the Sword</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        </div>
+                         <div class="newSwiper swiper">
+                         <div class="swiper-wrapper">
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-2.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Simple & Minimalist</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i>  
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-3.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Muted Color Poster</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-4.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Pouring Dreams</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-5.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Customize your Autumn Clothes</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-6.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Designed for Work</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-7.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Plant Tree for the Future</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-8.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Modern Abstract Poster</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-9.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Bird Park</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="newCard swiper-slide">
+                              <img src="assets/img/book-10.png" alt="" class="newImg">
+
+                              <div>
+                                 <h2 class="newTitle">Memories of the Sword</h2>
+                                 <div class="newPrices">
+                                    <span class="newDiscount"> ₦11,000.99</span>
+                                    <span class="newPrice"> ₦13,000.99</span>
+                                 </div>
+
+                                 <div class="newStars">
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-fill"></i> 
+                                    <i class="ri-star-half-fill"></i> 
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
          </section>
 
          <!--==================== JOIN ====================-->
@@ -165,7 +742,7 @@
       <script src=""></script>
 
       <!--=============== SWIPER JS ===============-->
-      <script src=""></script>
+      <script src="assets/js/swiper-bundle.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>

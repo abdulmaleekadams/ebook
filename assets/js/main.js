@@ -47,13 +47,69 @@ if (loginCloseBtn) {
 }
 
 /*=============== ADD SHADOW HEADER ===============*/
+const scrollHeader = () => {
+  const header = document.getElementById('header');
+
+  this.scrollY >= 50
+    ? header.classList.add('scrollHeader')
+    : header.classList.remove('scrollHeader');
+};
+
+window.addEventListener('scroll', scrollHeader);
 
 /*=============== HOME SWIPER ===============*/
+let swiperHome = new Swiper('.homeSwiper', {
+  loop: true,
+  spaceBetween: -24,
+  grabCursor: true,
+  slidesPerView: 'auto',
+  centeredSlides: 'auto',
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  breakpoint: {
+    1220: {
+      spaceBetween: -32,
+    },
+  },
+});
 
 /*=============== FEATURED SWIPER ===============*/
+let swiperFeatured = new Swiper('.featuredSwiper', {
+  loop: true,
+  spaceBetween: 16,
+  grabCursor: true,
+  slidesPerView: 'auto',
+  centeredSlides: 'auto',
 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev', 
+  },
+
+  breakpoint: {
+    1150: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+  },
+});
 /*=============== NEW SWIPER ===============*/
+let swiperNew = new Swiper('.newSwiper', {
+  loop: true,
+  spaceBetween: 16,
+  slidesPerView: 'auto',
 
+
+  breakpoint: {
+    1150: {
+      slidesPerView: 3,
+    },
+  },
+});
 /*=============== TESTIMONIAL SWIPER ===============*/
 
 /*=============== SHOW SCROLL UP ===============*/

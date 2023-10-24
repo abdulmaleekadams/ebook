@@ -103,6 +103,10 @@ img {
   height: auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 
@@ -126,7 +130,7 @@ img {
   padding-block: 5rem 1rem;
 }
 
-.section__title {
+.sectionTitle {
   text-align: center;
   font-size: var(--h1-font-size);
   font-family: var(--second-font);
@@ -222,6 +226,9 @@ img {
 }
 
 /* Add shadow header */
+.scrollHeader {
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.1);
+}
 
 /* Active link */
 
@@ -330,7 +337,7 @@ img {
   margin-bottom: 1.25rem;
 }
 
-.loginBtn{
+.loginBtn {
   width: 100%;
   cursor: pointer;
 }
@@ -341,33 +348,233 @@ img {
   top: 0;
 }
 
+body:has(.showSearch) {
+  overflow: hidden;
+}
+
 /*=============== HOME ===============*/
+.homeSwiper {
+  margin: initial;
+}
+
+.homeContainer {
+  padding-top: 2rem;
+  row-gap: 2.5rem;
+}
+
+.homeData {
+  text-align: center;
+}
+
+.homeTitle {
+  font-size: var(--biggest-font-size);
+  margin-bottom: 1rem;
+}
+
+.homeDescription {
+  margin-bottom: 2rem;
+}
+
+.homeImages {
+  display: grid;
+}
+
+.homeArticle,
+.homeImage {
+  width: 220px;
+  transition: transform 0.4s;
+}
+
+.homeArticle {
+  transform: scale(0.8);
+}
 
 /* Swiper class */
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+  transform: scale(1);
+}
 
 /*=============== BUTTON ===============*/
-.button{
+.button {
   display: inline-block;
   background-color: var(--first-color);
   color: var(--white-color);
   font-weight: var(--font-semi-bold);
   padding: 1rem 1.5rem;
-  transition: box-shadow .4s;
+  transition: box-shadow 0.4s;
 }
 
-.button:hover{
-  box-shadow: 0 4px 32px hsla(230, 10%, 5%, .2);
+.button:hover {
+  box-shadow: 0 4px 32px hsla(230, 10%, 5%, 0.2);
 }
 
 /*=============== SERVICES ===============*/
+.servicesContainer {
+  row-gap: 3rem;
+}
+
+.servicesCard {
+  text-align: center;
+}
+
+.servicesCard i {
+  display: block;
+  font-size: 3rem;
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+.servicesTitle {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.5rem;
+}
 
 /*=============== FEATURED ===============*/
+.featuredCard,
+.newCard {
+  position: relative;
+  text-align: center;
+  background-color: var(--container-color);
+  padding: 2rem;
+  overflow: hidden;
+  border: 2px solid var(--border-color);
+  transition: border 0.4s, background-color 0.4s;
+}
+
+.featuredCard:hover,
+.newCard:hover {
+  border: 2px solid var(--text-color);
+}
+
+.featuredImg {
+  width: 150px;
+  margin: 0 auto 0.75rem;
+}
+
+.featuredTitle {
+  font-size: var(--h2-font-size);
+}
+
+.featuredPrices,
+.newPrices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.75rem; 
+  margin-bottom: 1.25rem; 
+}
+
+.featuredDiscount, .newDiscount {
+  color: var(--title-color);
+}
+
+.featuredPrice, .newPrice {
+  font-size: var(--small-font-size);
+  text-decoration: line-through;
+}
+
+.featuredActions {
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  top: 2rem;
+  right: -1.5rem;
+  transition: right 0.4s;
+  row-gap: 1rem;
+}
+
+.featuredActions button {
+  background: none;
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
+
+.featuredCard:hover .featuredActions {
+  right: 1.5rem;
+}
 
 /* Swiper class */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: initial;
+  height: initial;
+  background-color: var(--container-color);
+  border: 2px solid var(--border-color);
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  color: var(--first-color);
+  transition: border 0.4s, background-color 0.4s;
+}
 
 /*=============== DISCOUNT ===============*/
+.discountContainer {
+  row-gap: 3.5rem;
+}
+
+.discountData {
+  text-align: center;
+}
+
+.discountTitle {
+  margin-bottom: 1rem;
+}
+
+.discountDescription {
+  margin-bottom: 2rem;
+}
+
+.discountImages {
+  display: flex;
+  justify-content: center;
+}
+
+.discountImg1,
+.discountImg2 {
+  width: 170px;
+}
+
+.discountImg1 {
+  transform: translateX(1rem) rotate(-10deg);
+}
+
+.discountImg2 {
+  transform: translateX(-1rem) rotate(10deg);
+}
 
 /*=============== NEW ===============*/
+.newCard {
+  display: flex;
+  align-items: center;
+  column-gap: 2.5rem;
+  text-align: left; 
+}
+
+.newImg {
+  width: 100px;
+}
+
+.newTitle {
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.newPrices{
+  justify-content: flex-start; 
+}
+
+.newStars{
+  color: var(--first-color);
+}
+
+.newSwiper:nth(1){
+  margin-top: 2rem; 
+}
 
 /*=============== JOIN ===============*/
 
