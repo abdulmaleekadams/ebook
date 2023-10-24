@@ -226,13 +226,14 @@ img {
 /* Active link */
 
 /*=============== SEARCH ===============*/
-.search {
+.search,
+.login {
   position: fixed;
   top: -100%;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
+  z-index: var(--z-fixed);
   background-color: hsla(230, 12%, 96%, 0.6);
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
@@ -249,40 +250,114 @@ img {
   padding-inline: 1rem;
 }
 
-.searchIcon{
+.searchIcon {
   font-size: 1.25rem;
   color: var(--title-color);
 }
 
-.searchInput{
+.searchInput {
   width: 100%;
   padding-block: 1rem;
   background-color: var(--container-color);
   color: var(--text-color);
 }
 
-.searchClose{
+.searchClose,
+.loginClose {
   position: absolute;
   top: 2rem;
   right: 2rem;
   font-size: 2rem;
   color: var(--title-color);
   cursor: pointer;
-
-
 }
 
-/* Show search */
-
 /*=============== LOGIN ===============*/
+.login {
+  padding: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
 
-/* Show login */
+.loginForm {
+  background-color: var(--container-color);
+  padding: 2rem 1.5rem;
+  border: 2px solid var(--border-color);
+  row-gap: 1.25rem;
+}
+
+.loginTitle {
+  font-size: var(--h2-font-size);
+}
+
+.loginGroup {
+  row-gap: 1.25rem;
+}
+
+.loginLabel {
+  display: block;
+  text-align: initial;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-bottom: 0.25rem;
+}
+
+.loginInput {
+  width: 100%;
+  background-color: var(--container-color);
+  border: 2px solid var(--border-color);
+  padding: 1rem;
+  color: var(--text-color);
+}
+
+.loginSignup,
+.loginForget {
+  display: block;
+  font-size: var(--small-font-size);
+}
+
+.loginSignup {
+  margin-bottom: 0.5rem;
+}
+
+.loginSignup a {
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+}
+
+.loginForget {
+  color: var(--first-color);
+  margin-bottom: 1.25rem;
+}
+
+.loginBtn{
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Show login */ /* Show search */
+.showSearch,
+.showLogin {
+  top: 0;
+}
 
 /*=============== HOME ===============*/
 
 /* Swiper class */
 
 /*=============== BUTTON ===============*/
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1rem 1.5rem;
+  transition: box-shadow .4s;
+}
+
+.button:hover{
+  box-shadow: 0 4px 32px hsla(230, 10%, 5%, .2);
+}
 
 /*=============== SERVICES ===============*/
 

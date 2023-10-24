@@ -72,7 +72,7 @@
       </header>
 
       <!--==================== SEARCH ====================-->
-      <div class="search" id="search-content">
+      <div class="search" id="searchContent">
          <form action="" class="searchForm">
             <i class="ri-search-line searchIcon"></i>
             <input type="search" class="searchInput" placeholder="What are you looking for?">
@@ -84,7 +84,35 @@
 
       <!--==================== LOGIN ====================-->
       <div class="login grid" id="login-content">
-         
+         <form action="" class="loginForm grid">
+            <h3 class="loginTitle">
+               Log in
+            </h3>
+
+            <div class="loginGroup grid">
+               <div>
+                  <label for="loginEmail" class="loginLabel">Email</label>
+                  <input type="email" placeholder="Enter your email" id="loginEmail" class="loginInput">
+               </div>
+
+               <div> 
+                  <label for="loginPassword" class="loginLabel">Password</label>
+                  <input type="password" placeholder="Enter your password" id="loginPassword" class="loginInput">
+               </div>
+            </div>
+
+            <div>
+               
+               <span class="loginSignup">
+                  You do not have an account? <a href="#">Sign Up</a>
+               </span>
+
+               <a href="#" class="loginForget">Yoy forgot your password</a>
+
+               <button type="submit" href="#" class="loginBtn button">Login</button>
+            </div>
+         </form>
+         <i class="ri-close-line loginClose" id="loginClose"></i>
       </div>
 
       <!--==================== MAIN ====================-->
