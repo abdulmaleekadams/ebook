@@ -87,7 +87,7 @@ let swiperFeatured = new Swiper('.featuredSwiper', {
 
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev', 
+    prevEl: '.swiper-button-prev',
   },
 
   breakpoint: {
@@ -103,7 +103,6 @@ let swiperNew = new Swiper('.newSwiper', {
   spaceBetween: 16,
   slidesPerView: 'auto',
 
-
   breakpoint: {
     1150: {
       slidesPerView: 3,
@@ -111,10 +110,55 @@ let swiperNew = new Swiper('.newSwiper', {
   },
 });
 /*=============== TESTIMONIAL SWIPER ===============*/
+let swiperTestimonial = new Swiper('.testimonialSwiper', {
+  loop: true,
+  spaceBetween: 16,
+  grabCursor: true,
+  slidesPerView: 'auto',
+  centeredSlides: 'auto',
+
+  breakpoint: {
+    1150: {
+      slidesPerView: 3,
+      centeredSlides: false,
+    },
+  },
+});
 
 /*=============== SHOW SCROLL UP ===============*/
+const showScrollup = () => {
+  const scrollup = document.getElementById('scrollup');
+
+  this.scrollY >= 350
+    ? scrollup.classList.add('showScrollup')
+    : scrollup.classList.remove('showScrollup');
+};
+
+window.addEventListener('scroll', showScrollup);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]');
+
+const scrollActive = () => {
+  const scrollDown = this.scrollY;
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight,
+      sectionTop = current.offsetTop - 58,
+      sectionId = current.getAttribute('id'),
+      sectionClass = document.querySelector(`.navMenu a[href*=${sectionId}]`);
+
+    if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
+      sectionClass.classList.add('activeLink');
+    } else {
+      sectionClass.classList.remove('activeLink');
+    }
+  });
+};
+window.addEventListener('scroll', scrollActive);
+window.addEventListener('load', scrollActive);
+
+
 
 /*=============== DARK LIGHT THEME ===============*/
 
