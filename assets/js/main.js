@@ -158,8 +158,54 @@ const scrollActive = () => {
 window.addEventListener('scroll', scrollActive);
 window.addEventListener('load', scrollActive);
 
-
-
 /*=============== DARK LIGHT THEME ===============*/
+const themeButton = document.getElementById('themeBtn');
+const darkTheme = 'darkTheme';
+const iconTheme = 'ri-sun-line';
 
+// previously selected theme (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+// Obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme) ? 'ri-sun-line' : 'ri-moon-line';
+
+// validate if the user previously chose a theme
+if (selectedTheme) {
+  // Activate or deactivate theme
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](
+    iconTheme
+  );
+}
+
+themeButton.addEventListener('click', () => {
+  // Add  or remove dark / icone theme
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+
+  // save the theme and the current icon that the user chose
+  localStorage.setItem('selected-theme', getCurrentTheme());
+  localStorage.setItem('selected-icon', getCurrentIcon());
+});
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  dealy: 400,
+  reset: false,
+});
+
+sr.reveal(
+  `.homeData, .featuredContainer, .newContainer, .joinData, .testimonialContainer, .footer`
+);
+sr.reveal(`.homeImages`, { delay: 600 });
+sr.reveal(`.servicesCard`, { interval: 1000 });
+sr.reveal(`.discountData`, { origin: 'left' });
+sr.reveal(`.discountImages`, { origin: 'right' });
